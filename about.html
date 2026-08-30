@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Bhargavi Singh - Education, Experience, and Background" />
+  <title>About | Bhargavi Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            background: '#030712',
+            foreground: '#e8ecf1',
+            card: '#0b1020',
+            'card-foreground': '#e8ecf1',
+            primary: '#06b6d4',
+            'primary-foreground': '#030712',
+            secondary: '#262626',
+            'secondary-foreground': '#e8ecf1',
+            muted: '#262626',
+            'muted-foreground': '#9ca3af',
+            accent: '#8b5cf6',
+            'accent-foreground': '#e8ecf1',
+            border: '#1e293b',
+            input: '#1e293b',
+            ring: '#06b6d4',
+          },
+          borderRadius: {
+            lg: '0.5rem',
+            md: 'calc(0.5rem - 2px)',
+            sm: 'calc(0.5rem - 4px)',
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="min-h-screen bg-background text-foreground antialiased">
+  <!-- Space Background Canvas -->
+  <canvas id="space-canvas"></canvas>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">~/Bhargavi</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Resume</a></li>
+        </ul>
+        <button id="mobile-menu-button" class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+      </nav>
+    </div>
+    <div id="mobile-menu" class="hidden" style="background: rgba(3, 7, 18, 0.95); border-top: 1px solid var(--border);">
+      <div class="container" style="padding: 1rem 2rem;">
+        <a href="about.html" style="display: block; padding: 0.75rem 0; color: var(--fg-secondary);">About</a>
+        <a href="projects.html" style="display: block; padding: 0.75rem 0; color: var(--fg-secondary);">Projects</a>
+        <a href="experience.html" style="display: block; padding: 0.75rem 0; color: var(--fg-secondary);">Experience</a>
+        <a href="docs/resume.pdf" target="_blank" rel="noopener noreferrer" style="display: block; padding: 0.75rem 0; color: var(--accent);">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: 4rem;">
+        <h1 class="section-title" style="margin-bottom: 1.5rem;">About Me</h1>
+        <p style="font-size: 1.1rem; color: var(--fg-secondary); line-height: 1.8;">
+          B.Tech Computer Science (Cloud Computing) student with strong fundamentals in data structures, algorithms, and problem solving, complemented by hands-on experience applying AI/ML techniques to real-world systems. Proven ability to design efficient algorithms (graph theory, MST, classification/ensemble models), write clean Python and Java, and translate complex technical problems for both technical and non-technical stakeholders. AWS and IBM certified with a track record of shipping deployed, real-time systems end to end.
+        </p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-grid" style="margin-bottom: 5rem;">
+        <div class="contact-item">
+          <div style="font-size: 0.9rem; color: var(--accent); margin-bottom: 0.5rem;">Phone</div>
+          <a href="tel:+916362556509">+91 6362556509</a>
+        </div>
+        <div class="contact-item">
+          <div style="font-size: 0.9rem; color: var(--accent); margin-bottom: 0.5rem;">Email</div>
+          <a href="mailto:bhargavi.sg@outlook.com">bhargavi.sg@outlook.com</a>
+        </div>
+        <div class="contact-item">
+          <div style="font-size: 0.9rem; color: var(--accent); margin-bottom: 0.5rem;">GitHub</div>
+          <a href="https://github.com/bgvis9125" target="_blank" rel="noopener noreferrer">github.com/bgvis9125</a>
+        </div>
+        <div class="contact-item">
+          <div style="font-size: 0.9rem; color: var(--accent); margin-bottom: 0.5rem;">LinkedIn</div>
+          <a href="https://www.linkedin.com/in/bhargavi-singh-671745286/" target="_blank" rel="noopener noreferrer">linkedin.com/in/bhargavi-singh</a>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div style="margin-bottom: 5rem;">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2023 — 2027</div>
+            <div class="timeline-title">B.Tech, Computer Science & Engineering (Cloud Computing)</div>
+            <div class="timeline-subtitle">SRM Institute of Science and Technology (SRMIST), KTR</div>
+            <p style="color: var(--fg-secondary); margin-top: 0.5rem;">CGPA: 8.9/10 (as of April 2026)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div style="margin-bottom: 5rem;">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2025 — Present</div>
+            <div class="timeline-title">Corporate Lead</div>
+            <div class="timeline-subtitle">Team RUDRA, SRM Mars Rover Team</div>
+            <ul style="color: var(--fg-secondary); margin-left: 1.25rem; margin-top: 0.5rem;">
+              <li>Managed external PR and social media presence; authored official competition documentation, including Preliminary Design Reports for international events.</li>
+              <li>Led the team to 4th place globally at the International Rover Challenge 2026, and Winner in the Astrobiology Expedition category.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-title">Cloud Virtual Intern</div>
+            <div class="timeline-subtitle">Amazon Web Services</div>
+            <p style="color: var(--fg-secondary); margin-top: 0.5rem;">Gained hands-on exposure to core AWS cloud infrastructure and services.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-title">Cyber Security Virtual Intern</div>
+            <div class="timeline-subtitle">Palo Alto Networks</div>
+            <p style="color: var(--fg-secondary); margin-top: 0.5rem;">Completed applied modules on network security fundamentals and threat analysis.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022 — 2023</div>
+            <div class="timeline-title">Health Outreach Volunteer</div>
+            <div class="timeline-subtitle">Pinkish — Women's Health & Hygiene Organisation</div>
+            <p style="color: var(--fg-secondary); margin-top: 0.5rem;">Supported community outreach and awareness programs on women's health and hygiene.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">Freelance</div>
+            <div class="timeline-title">Freelance Brand Designer</div>
+            <div class="timeline-subtitle">Independent</div>
+            <p style="color: var(--fg-secondary); margin-top: 0.5rem;">Designed logos and cards for independent clients.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div style="margin-bottom: 5rem;">
+        <h2 class="section-title">Languages</h2>
+        <div class="skills-grid" style="margin-top: 2rem;">
+          <div class="skill-category" style="text-align: center;">
+            <h3 style="text-align: center;">English</h3>
+            <p style="color: var(--fg-secondary);">Professional Proficiency</p>
+          </div>
+          <div class="skill-category" style="text-align: center;">
+            <h3 style="text-align: center;">Hindi</h3>
+            <p style="color: var(--fg-secondary);">Native / Bilingual</p>
+          </div>
+          <div class="skill-category" style="text-align: center;">
+            <h3 style="text-align: center;">Japanese</h3>
+            <p style="color: var(--fg-secondary);">Elementary (JLPT N5)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publications -->
+      <div style="margin-bottom: 5rem;">
+        <h2 class="section-title">Publications</h2>
+        <div class="project-grid" style="margin-top: 2rem;">
+          <div class="publication-item">
+            <div class="publication-title">PsyPredict: An EVM-based Postpartum Depression Predictor</div>
+            <div class="publication-venue">IEEE Conference Publication</div>
+          </div>
+          <div class="publication-item">
+            <div class="publication-title">MOODFIT: GPU-Accelerated Intelligent Outfit Recommendation System</div>
+            <div class="publication-venue">IEEE Conference Publication</div>
+          </div>
+          <div class="publication-item">
+            <div class="publication-title">Data Structures and Algorithm Applications</div>
+            <div class="publication-venue">Book Chapter in Contemporary Research in Engineering, Management and Science</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div>
+        <h2 class="section-title">Certifications & Recognitions</h2>
+        <div class="cert-grid" style="margin-top: 2rem;">
+          <div class="cert-card">
+            <div class="cert-provider">AWS Certified</div>
+            <div class="cert-name">AI Practitioner, Cloud Practitioner, Data Engineer, Solution Architect</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-provider">IBM Certified</div>
+            <div class="cert-name">Python for Data Science, Cloud Essentials, Containers, Multicloud</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-provider">NPTEL</div>
+            <div class="cert-name">Database Management, Cloud Computing, Networking, Applied Accelerated AI, High-Performance Scientific Computing</div>
+            <div style="font-size: 0.85rem; color: var(--accent); margin-top: 0.5rem;">NPTEL Star, April 2026</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-provider">Awards & Recognition</div>
+            <div class="cert-name">Best Paper — ICCPCT 2026; Winner — Techknow 2023 (Automatic Solar Tracker); Young Journalist, Ryan TV</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="https://github.com/bgvis9125" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/bhargavi-singh-671745286/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:bhargavi.sg@outlook.com" aria-label="Email">Email</a>
+        </div>
+        <p class="footer-text">© 2025 Bhargavi Singh. Built with curiosity and caffeine.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/space-bg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
